@@ -31,7 +31,11 @@ public class StaticFactory {
         }
 
         public Service newInstance(String name) {
-            return provides.get(name).newService();
+            Provide provide = provides.get(name);
+            if (provide == null) {
+                throw new IllegalArgumentException("No provider registered with name: " + name);
+            }
+            return provide.newService();
         }
 
 
