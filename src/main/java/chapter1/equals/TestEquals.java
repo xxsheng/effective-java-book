@@ -1,4 +1,4 @@
-package equals;
+package chapter1.equals;
 
 import java.sql.Timestamp;
 import java.util.Date;

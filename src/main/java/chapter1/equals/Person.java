@@ -1,6 +1,4 @@
-package equals;
-
-import com.google.common.collect.Lists;
+package chapter1.equals;
 
 import java.io.*;
 

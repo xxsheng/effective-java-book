@@ -1,4 +1,4 @@
-package create$update;
+package chapter1.create$update;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

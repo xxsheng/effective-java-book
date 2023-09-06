@@ -1,4 +1,4 @@
-package generics;
+package chapter1.generics;
 
 import java.util.*;
 

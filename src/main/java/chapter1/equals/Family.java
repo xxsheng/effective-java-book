@@ -1,7 +1,6 @@
-package equals;
+package chapter1.equals;
 
 import java.io.Serializable;
-import java.util.List;
 
 public class Family implements Serializable {
     private String name;

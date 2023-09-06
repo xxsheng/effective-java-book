@@ -1,4 +1,4 @@
-package build;
+package chapter1.build;
 
 public class NutritionFacts {
     private final int servingSize; // (ml) required

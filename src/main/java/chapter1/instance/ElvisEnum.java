@@ -1,4 +1,4 @@
-package instance;
+package chapter1.instance;
 
 public enum ElvisEnum {
     INSTANCE;

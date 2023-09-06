@@ -1,4 +1,4 @@
-package callback;
+package chapter1.callback;
 
 public class ConsumerTest extends AbstractConsumer{
     @Override

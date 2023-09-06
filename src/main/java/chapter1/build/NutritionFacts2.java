@@ -1,8 +1,4 @@
-package build;
-
-import sun.reflect.generics.tree.Tree;
-
-import javax.xml.soap.Node;
+package chapter1.build;
 
 public class NutritionFacts2 {
     private final int servingSize;

@@ -1,4 +1,4 @@
-import equals.MyTimestamp;
+import chapter1.equals.MyTimestamp;
 import org.junit.Test;
 
 import java.util.Date;

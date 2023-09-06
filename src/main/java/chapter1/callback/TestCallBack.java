@@ -1,4 +1,4 @@
-package callback;
+package chapter1.callback;
 
 public interface TestCallBack {
 

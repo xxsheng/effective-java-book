@@ -1,4 +1,4 @@
-package equals;
+package chapter1.equals;
 
 import java.io.Serializable;
 import java.util.Date;
