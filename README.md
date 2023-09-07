@@ -1,2 +1,2 @@
 # effective-java-book
-effective java book reading 
+effective java book 阅读
