@@ -1,7 +1,10 @@
 import chapter1.equals.MyTimestamp;
 import org.junit.Test;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.Date;
+import java.util.Objects;
 
 public class TestMyTimestamp {
 
@@ -30,6 +33,25 @@ public class TestMyTimestamp {
         assert myTimestamp2.equals(date);
 
         assert myTimestamp1.equals(myTimestamp2);
+    }
+
+    @Test
+    public void test1() throws MalformedURLException {
+        URL url = new URL("http://www.baidu.com");
+    }
+
+    @Test
+    public void test2() {
+        Float a = Float.NaN;
+        Float b = Float.NaN;
+        System.out.println(a);
+        System.out.println(a == b);
+        System.out.println(Objects.equals(Float.NaN, Float.NaN));
+    }
+
+    @Test
+    public void test3(){
+        System.out.println(Double.doubleToLongBits(1.1));
     }
 
 }
