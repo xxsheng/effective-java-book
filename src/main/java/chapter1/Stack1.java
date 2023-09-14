@@ -4,7 +4,7 @@ import org.ietf.jgss.Oid;
 
 import java.util.Arrays;
 
-public class Stack1 {
+public class Stack1 implements Cloneable{
 
     Object[] elementData;
 
@@ -31,5 +31,16 @@ public class Stack1 {
         Object object = elementData[--size];
         elementData[size] = null;
         return object;
+    }
+
+    @Override
+    public Stack1 clone() {
+        try {
+            Stack1 clone = (Stack1) super.clone();
+            clone.elementData = this.elementData.clone();
+            return clone;
+        } catch (CloneNotSupportedException e) {
+            throw new AssertionError();
+        }
     }
 }
