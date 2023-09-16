@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * symmetry 对称性
  */
-public class CaseInsensitiveString {
+public class CaseInsensitiveString implements Comparable<CaseInsensitiveString>{
     private final String s;
 
     public CaseInsensitiveString(String s) {
@@ -37,11 +37,18 @@ public class CaseInsensitiveString {
 //        return obj instanceof CaseInsensitiveString && ((CaseInsensitiveString) obj).s.equalsIgnoreCase(this.s);
     }
 
+
+
     public static void main(String[] args) {
         List<CaseInsensitiveString> caseInsensitiveStringList = new ArrayList<>();
         caseInsensitiveStringList.add(new CaseInsensitiveString("Polish"));
         String s = "polish";
         // 此处以s为基准去比较equals
         System.out.println(caseInsensitiveStringList.contains(s));
+    }
+
+    @Override
+    public int compareTo(CaseInsensitiveString o) {
+        return String.CASE_INSENSITIVE_ORDER.compare(this.s,o.s);
     }
 }

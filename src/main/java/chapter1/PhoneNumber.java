@@ -3,7 +3,7 @@ package chapter1;
 import java.util.HashMap;
 import java.util.Map;
 
-public class PhoneNumber {
+public class PhoneNumber implements Comparable<PhoneNumber>{
 
     private volatile  int hashcode;
 
@@ -86,6 +86,34 @@ public class PhoneNumber {
         // 25 <<< 6 + 25 <<<2 + 25 <<<1
         System.out.println(i * a);
         System.out.println((25<<6) + (25 <<2) + (25 <<1));
+
+    }
+
+    @Override
+    public int compareTo(PhoneNumber o) {
+//        if (areaCode < o.areaCode)
+//            return -1;
+//        if (areaCode > o.areaCode)
+//            return 1;
+//
+//        if (prefix < o.prefix)
+//            return -1;
+//        if (prefix > o.prefix)
+//            return 1;
+//
+//        return Short.compare(lineNumber, o.lineNumber);
+
+        int areaDiff = areaCode - o.areaCode;
+        if (areaDiff != 0) {
+            return areaDiff;
+        }
+
+        int prefixDiff = prefix - o.prefix;
+        if (prefixDiff != 0) {
+            return prefixDiff;
+        }
+
+        return lineNumber - o.lineNumber;
 
     }
 }
